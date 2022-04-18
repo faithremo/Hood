@@ -1,0 +1,36 @@
+{% extends 'base.html' %}
+{% load crispy_forms_tags %}
+{% load cloudinary %}
+{% block content%}
+<div class="container" style="margin-top:8%">
+    <div class="content-section">
+        <div class="media">
+            <div class="container">
+                <div class="card">
+                    <div class="row justify-content-center">
+                    <div class="col-md-1"></div>
+                    <div class="col-md-3">
+                        <img class="rounded-circle account-img" src="{{ user.profile.profile_picture.url }}"
+                            width="100%">
+                    </div>
+                    <div class="col-md-6 mt-3">
+                        <div class="media-body">
+                            <div class="account-heading"><span
+                                    class="mr-3 text-secondary username"> <b>Name:</b> {{ user.username }}</span>
+                                <a class="btn btn-sm text-light mr-3" data-toggle="modal"
+                                    data-target=".bd-example-modal-md "><strong>Edit Profile</strong></a>
+                            </div>
+                            <p class="text-secondary"> <b>Bio:</b> {{ user.profile.bio }}</p>
+                            <p class="text-secondary"> <b>Email:</b> {{ user.profile.email }}</p>
+                            <p class="text-secondary"> <b>Neighbourhood:</b> {{ user.profile.neighbourhood }}</p>
+                            <p class="text-secondary"> <b>Location :</b> {{ user.profile.location }}</p>
+                            <button class="btn btn-info"><a href="{% url 'updateprofile' %}">update profile</a></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </div>
+        
+    </div>
+{% endblock %}

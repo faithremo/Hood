@@ -1,0 +1,47 @@
+{% extends 'base.html' %}
+{% load cloudinary %}
+
+{%block content%}
+<body style="background-image:url(https://media.bizj.us/view/img/10894337/smart-neighborhood0003*1200xx3600-2025-0-188.jpg)
+
+; background-repeat: no-repeat; background-size: 100%;">
+    
+<div class="container">
+    <h3>Hoods</h3>
+    <div class="row">
+    {% for hood in hoods %}
+    <div class="col-md-4">
+        <div class="card mb-4">
+         <img src="{{hood.picture.url}}" class="card-img-top" alt="" width="200px" height="250px">
+         <div class="card-body">
+          <button class="btn btn-dark"><a href="{% url 'neighbourhood' hood.id %}" class="link-light text-decoration-none">Explore Hood</a></button>
+         <p class="card-title">{{hood.name}}, {{hood.location}}</p>
+          <p class="card-text">{{hood.description}}</p>
+        </div>
+     </div>
+   </div>
+  {%endfor%}
+ </div>
+</div>
+</body>
+
+
+{%endblock%}
+
+<div class="row">
+    {% for busines in business %}
+    <h1>Hood Buzz</h1>
+    <div class="col-md-4">
+        <div class="card mb-4">
+            <div class="card-body">
+                <h5 class="card-title">{{busines.name}}
+                </h5>
+                <p class="card-text">{{busines.email}}</p>
+                <p class="card-text">{{bususines.description}}</p>
+                <p class="card-text">Owner: <small class="text-muted">
+                    {{ busines.user.user.username|title }}</small></p>
+            </div>
+        </div>
+    </div>
+    {% endfor %}
+</div>

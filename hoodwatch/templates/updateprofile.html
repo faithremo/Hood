@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+{% load crispy_forms_tags %}
+{% load cloudinary %}
+{% block content%}
+<div class="container">
+<form action="" method="post" novalidate enctype="multipart/form-data" class="mr-4 mt-4 ml-4 mb-4">
+    {% csrf_token%}
+    {{ prof_form|crispy}}
+    <button type="submit" class="btn text-success btn-sm"> Update Profile</button>
+    <button type="button" class="btn btn-outline-dark btn-sm" data-dismiss="modal">close
+    </button>
+</form>
+</div>
+
+</div>
+{% endblock %}

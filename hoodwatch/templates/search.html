@@ -1,0 +1,26 @@
+{%extends 'base.html'%} 
+{% load cloudinary %}
+{% block content %}
+<div class="container">
+
+  <div class="row">
+    {% if business%}
+      <h2>Found {{ business|length }} of searched term {{message}}</h2>
+    {% else %}
+      <h2> Found 0 businesses for the search term {{message}}</h2>
+    {% endif %}
+
+  </div>
+
+  <div class="row">
+
+  {% if business %}
+    {% for busines in business %}
+      <div class="col-sm-6 col-md-3">
+          <h1>{{busines.name}}</h1>
+      </div>
+    {% endfor %}
+  {% endif %}
+  </div>
+</div>
+{% endblock %}
