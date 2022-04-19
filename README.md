@@ -33,3 +33,9 @@ In order to run the application, the following installations are required:
  ## Repository
 https://github.com/faithremo/Hood.git
 
+## Technologies used
+1. django
+2. html
+3. bootstrap
+4. css
+5. SQLAlchemy
