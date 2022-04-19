@@ -58,3 +58,6 @@ There are no known bugs.
 
 ## Support and contact details
 email: faithmakumi@gmail.com
+
+## Support and contact details
+email: faithmakumi@gmail.com
