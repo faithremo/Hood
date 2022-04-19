@@ -1,4 +1,4 @@
-from neighbourhoodapp.views import neighbourhood, profile
+from hoodwatch.views import neighbourhood, profile
 from django.test import TestCase
 from .models import NeighbourHood, Profile, Post, Business
 
