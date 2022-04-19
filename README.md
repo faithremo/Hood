@@ -52,3 +52,9 @@ https://github.com/faithremo/Hood.git
 9. Django-bootstrap
 11. Whitenoise
 12. Gunicorn
+
+## Bugs
+There are no known bugs.
+
+## Support and contact details
+email: faithmakumi@gmail.com
