@@ -19,3 +19,12 @@ This is a django application that allows users to;
 -to post something to inform members about something
 -to access important contacts
 -to post and search a bussiness in the area.
+
+
+## Installation
+In order to run the application, the following installations are required:
+ 1. python3.8 
+ 2. django
+ 3. pip Visual Studio 
+ 4. virtualenv 
+ 5. requirements.txt
