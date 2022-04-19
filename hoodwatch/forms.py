@@ -6,7 +6,7 @@ from django.db.models import fields
 from .models import NeighbourHood, Post, Profile, Business
 
 class CreateUserForm(UserCreationForm):
-    email = forms.EmailField(max_length=254, help_text='Required. Inform a valid email address.')
+    email = forms.EmailField(max_length=270, help_text='Required. Inform a valid email address.')
 
     class Meta:
         model = User
