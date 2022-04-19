@@ -39,3 +39,16 @@ https://github.com/faithremo/Hood.git
 3. bootstrap
 4. css
 5. SQLAlchemy
+
+## Dependencies
+1. Psycopg2
+2. Django-heroku
+3. Django-urls
+4. Cloudinary
+5. Django-registration
+6. Python-decouple
+7. Pillow
+8. Django
+9. Django-bootstrap
+11. Whitenoise
+12. Gunicorn
