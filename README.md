@@ -10,6 +10,10 @@ Faith Nduta
 ## Project Image
 
 
+![landingpage](https://user-images.githubusercontent.com/93547553/164224866-0fc6b95b-3d32-4bd7-8397-6470acd0ff0e.png)
+
+![posts and businesses](https://user-images.githubusercontent.com/93547553/164224904-9b2a08c1-665f-4e58-a091-5ec2731e8bc5.png)
+
 
 ## Desctiption
 This is a django application that allows users to;
